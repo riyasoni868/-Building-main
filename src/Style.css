@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+
+.slideshow {
+    /* position: absolute; */
+    inset: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 10s infinite;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url('./assets/homea.jpg');
+        opacity: 1;
+    }
+
+    33% {
+        background-image: url('./assets/Homeb.jpg');
+        opacity: 1;
+    }
+
+    100% {
+        background-image: url('./assets/Homec.jpg');
+        opacity: 1;
+    }
+}
+
+.worker::after {
+    position: absolute;
+    content: "";
+    background: #0e0e0eb9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.hover-img {
+    opacity: 0;
+}
+
+.hover-img:hover {
+    opacity: 1;
+    transition: all .4s ease-in-out;
+}
+
+.project {
+    background-image: url(./assets/5ZTPWEE.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 280px;
+    position: relative;
+}
+
+.project::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.509);
+}
+
+/* services- section */
+.services {
+    background-image: url(./assets/services.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 280px;
+    position: relative;
+}
+
+.services::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.509);
+
+}
+
+/* about section */
+.aboutus-image {
+    background-image: url("./assets/Public.webp");
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.aboutus-image::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.368);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.contact {
+    background-image: url(./assets/5ZTPWEE.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 280px;
+    position: relative;
+}
+
+.contact::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.509);
+}
